@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/AllenBuhle1/Crowdfunding-product-page-challenge.git)
 - Live Site URL: [On Netlify](https://wonderful-brown-7d36f1.netlify.app/)
 
 ## My process
