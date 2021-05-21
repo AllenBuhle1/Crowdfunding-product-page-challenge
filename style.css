@@ -1,0 +1,713 @@
+/*************************************USING MOBILE FIRST APPROACH***********************************************/
+
+
+/******************************************** IMPOTING FONTS****************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+/******************************************DECLARING VARIABLES*************************************************/
+:root{
+    /**************Primary Color************/
+    --modPrimaryColor: hsl(176, 50%, 47%);
+    --darkPrimaryColor: hsl(176, 72%, 28%);
+
+    /**************Neutral Color************/
+    --blackNeutralColor: hsl(0, 0%, 0%);
+    --DGreyNeutralColor: hsl(0, 0%, 48%);
+}
+
+/********************************************GENERAL STYLING***************************************************/
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--DGreyNeutralColor);
+}
+body
+{
+    background: rgba(241,241,241,.6);
+}
+/*********************************************MOBILE STYLING***************************************************
+                            THIS SECTION OF CSS WILL BE RESPONSIBLE FOR SMALL SCREENS
+                                        WHICH INCLUDES MOBILES AND TABLETS
+                                            FROM SMALLEST PHONE TO 750PX
+***************************************************************************************************************/
+
+
+/******************************************HERO AREA STYLING START HERE*****************************************/
+.heroArea
+{
+    background-image:  url(./images/image-hero-mobile.jpg);
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+}
+.heroArea nav{
+    padding: 20px 20px;
+}
+.heroArea .logo a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+.heroArea .menu
+{
+    position: relative;
+    z-index: 6;
+    transform: scale(0);
+    margin-top: 2vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.heroArea .topLine
+{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3vh;
+}
+.topLine .mobMenu
+{
+    position: relative;
+
+}
+.closeMenu,.hummBurgerMenu
+{
+    position: absolute;
+    /*Add z-index when no pop up is on screen*/
+}
+.heroArea .menu li
+{
+    list-style: none;
+    line-height: 3.5em;
+    border-top: 1px var(--DGreyNeutralColor) solid;
+    border-bottom: 1px var(--DGreyNeutralColor) solid;
+}
+.heroArea .menu li:last-child, .heroArea .menu li:first-child
+{
+    border: none;
+}
+.heroArea .menu li a
+{
+    color: var(--blackNeutralColor);
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 4vh;
+    opacity: .8;
+    transition: 200ms ease-in-out;
+}
+/****************************************************HERO AREA STYLING ENDS***********************************/
+
+
+
+/**********************************************CONTENT AREA STYLING START HERE********************************/
+.content
+{
+    margin: 0vh 2em;
+    margin-top: -7vh;
+}
+.content>div
+{
+    margin-bottom: 1rem;
+}
+/*********FIRST CARD***********/
+.mastercraftBambooMonitorRiser
+{
+    position: relative;
+    z-index: 0;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    height: auto;
+}
+.mastercraftBambooMonitorRiser h1
+{
+    margin: 1em 0;
+    color: var(--blackNeutralColor);
+    font-weight: 500;
+}
+.mastercraftBambooMonitorRiser p
+{
+    font-size: .7em;
+}
+.mastercraftBambooMonitorRiser .masterBottomLine
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 1em 0;
+}
+.mastercraftBambooMonitorRiser .masterBottomLine .backThisProject
+{
+    font-size: .7em;
+    padding: 1em 2em;
+    background: var(--modPrimaryColor);
+    border-radius: 50px;
+    font-weight: 500;
+    color: #fff;
+    transition: 200ms ease-in-out;
+}
+.mastercraftBambooMonitorRiser .masterBottomLine .backThisProject:hover
+{
+    background-color: var(--darkPrimaryColor);
+}
+.mastercraftBambooMonitorRiser .masterBottomLine .bookMark
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 2;
+}
+/********END FIRST CARD*******/
+
+
+/*********SECOND CARD*********/
+.mainStats
+{
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5em 1em;
+}
+.mainStats div
+{
+    display: flex;
+    margin-bottom: 1em;
+    flex-direction: column;
+}
+.mainStats div span
+{
+    font-size: 10px;
+}
+.mainStats div .bigBold
+{
+    color: var(--blackNeutralColor);
+    font-weight: 700;
+    font-size: 30px;
+}
+.mainStats .statWithBefore
+{
+    position: relative;
+    padding-bottom: 1em;
+}
+.mainStats .statWithBefore::before
+{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0em;
+    left:  25%;
+    background: var(--DGreyNeutralColor);
+    opacity: .4;
+}
+.mainStats .statsProgress
+{
+    width: 100%;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+.mainStats .statsProgress .progressValue
+{
+    height: 10px;
+    z-index: 1;
+    border-radius: 50px;
+    position: absolute;
+    background-color: var(--modPrimaryColor);
+}
+/*******END SECOND CARD*****/
+
+/********ABOUT SECTION*****/
+.aboutSection
+{
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1.5em 1em;
+}
+.aboutSection p
+{
+    font-size: .8em;
+}
+.aboutSection h1, .aboutSection .pledgeAmount
+{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--blackNeutralColor);
+}
+.aboutSection .pledgeAmount
+{
+    color: var(--modPrimaryColor);
+    line-height: 2;
+    margin-bottom: 1em;
+}
+.aboutSection .aboutThis
+{
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+.aboutSection .pledgeCard
+{
+    border: 1px solid hsl(0, 0%, 67%);
+    border-radius: 5px;
+    margin-top: 1.5em;
+    padding: 1em;
+    cursor: pointer;
+}
+span
+{
+    font-size: .75rem;
+    padding-left: .5em;
+}
+.itemsLeft
+{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    color: var(--blackNeutralColor);
+    font-weight: 700;
+    margin-right: .5em;
+}
+.aboutSection .pledgeCardBottomLine
+{
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutSection .pledgeCardBottomLine .actionBtn a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.aboutSection .pledgeCardBottomLine .actionBtn
+{
+    padding: 1em 2em;
+    cursor: pointer;
+    letter-spacing: -2;
+    font-size: .9rem;
+    background-color: var(--modPrimaryColor);
+    border-radius: 50px;
+    transition: 200ms ease-in-out;
+}
+.aboutSection .pledgeCardBottomLine .actionBtn:hover
+{
+    background-color: var(--darkPrimaryColor);
+}
+.outOfStock .pledgeCardBottomLine .actionBtn
+{
+    padding: .8em 1em;
+    color: white;
+    font-size: .7rem;
+    background-color: var(--DGreyNeutralColor);
+    border-radius: 50px;
+    letter-spacing: -2;
+    cursor: not-allowed;
+}
+/********ABOUT SECTION*****/
+footer
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1em;
+}
+footer div{
+    font-size: 8px;
+    margin: .5em;
+}
+footer a
+{
+    color: var(--modPrimaryColor);
+    text-decoration: none;
+    font-size: 8px;
+}
+/***********************************************CONTENT AREA STYLING END HERE********************************/
+
+
+
+/********************************************HIDDEN AT FIRST STYLING START HERE********************************/
+/*WHEN USER CHOOSE TO SUPPORT THE PROJECT*/
+main
+{
+    position: relative;
+    overflow: hidden;
+}
+main .withPopUp
+{
+    top: 0;
+    z-index: 5;
+    position: absolute;
+    height: calc(100% + 50px);
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+.selectModalStart
+{
+    position: absolute;
+    top: 0;
+    padding: 4em 1em  1em;
+    z-index: 5;
+    transform: scale(0);
+}
+.selectModalContent
+{
+    font-size: .9rem;
+    border-radius: 5px;
+    padding: 1em 2em;
+    background-color: #fff;
+}
+.selectModalContent p
+{
+    padding: 1em 0em;
+    font-size: .9rem;
+}
+.selectModalStart .selectModalFirstline
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+.selectModalStart .selectModalFirstline h1
+{
+    color:  var(--blackNeutralColor);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.selectModalStart .pledge
+{
+    font-size: 1rem;
+    border: 1px solid hsl(0, 0%, 67%);
+    padding: 1em;
+    cursor: pointer;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+.pledgeFirstLine
+{
+    display: flex;
+    align-items: center;
+}
+.selectModalStart .pledge .pledgeFirstLine h1
+{
+    color: var(--blackNeutralColor);
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: .95rem;
+}
+.selectModalStart .pledge .pledgeFirstLine .pledgeAmount
+{
+    font-size: .95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--modPrimaryColor);
+}
+.checkCircle
+{
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: hsl(0, 0%, 67%) solid 1px;
+}
+.DropDown
+{
+    border-top: 1px solid hsl(0, 0%, 67%);
+    padding-top: 1em;
+    margin-top: 1em;
+    display: none;
+}
+.selectModalStart .activePledgeCard 
+{
+    font-size: 1rem;
+    border: 2px solid var(--modPrimaryColor);
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+.selectModalStart .activePledgeCard .checkCircle .checked
+{
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: var(--modPrimaryColor);
+}
+.selectModalStart .activePledgeCard .DropDown
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.selectModalStart .activePledgeCard .DropDown input, .selectModalStart .activePledgeCard .DropDown input:focus
+{
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.selectModalStart .activePledgeCard .DropDown>div
+{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.selectModalStart .activePledgeCard .DropDown>div div
+{
+    border-radius: 50px;
+    border: 1px solid hsl(0, 0%, 67%);
+    padding: 1em 2em;
+    margin-top: 1em;
+}
+.selectModalStart .activePledgeCard .DropDown>div div span
+{
+    color: var(--blackNeutralColor);
+    font-size: inherit;
+    font-weight: 700;
+}
+.selectModalStart .activePledgeCard .DropDown>div .submit a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.selectModalStart .activePledgeCard .DropDown>div .submit
+{
+    background-color: var(--modPrimaryColor);
+    border: none;
+    transition: 200ms ease-in-out;
+}
+.selectModalStart .activePledgeCard .DropDown>div .submit:hover
+{
+    background-color: var(--darkPrimaryColor);
+}
+/*END SUPPORT THE PROJECT*/
+
+
+/*THANK YOU FOR YOUR SUPPORT*/
+.successModal
+{
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+}
+.successModalContent
+{
+    background-color: #fff;
+    width: 90%;
+    position: fixed;
+    padding: 1em 2em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.successModalContent p
+{
+    font-size: .8rem;
+    text-align: center;
+}
+.successModalContent .checkMarkBg
+{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .3em;
+    background-color: var(--modPrimaryColor);
+}
+.successModalContent .checkMark
+{
+    width: 40%;
+    height: 25%;
+    border-left: 3px #fff solid;
+    transform: rotate(-40deg);
+    border-bottom: 3px #fff solid;
+}
+.successModalContent h3
+{
+    font-weight: 700;
+    line-height: 3;
+    color: var(--blackNeutralColor);
+}
+.successModalContent .gotIt
+{
+    margin: 2em;
+    border-radius: 50px;
+    padding: .5em 1.5em;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--modPrimaryColor);
+    transition: 200ms ease-in-out;
+}
+.successModalContent .gotIt:hover
+{
+    background-color: var(--darkPrimaryColor);
+}
+/*END THANK FOR YOUR SUPPORT*/
+
+
+/********************************************HIDDEN AT FIRST STYLING END HERE********************************/
+
+
+
+/********************************************DESKTOP STYLING***************************************************
+                        THIS SECTION OF CSS WILL BE RESPONSIBLE FOR MIDIUM TO LARGE SCREENS
+                                        WHICH INCLUDES LARGE TABLETS AND COMPUTERS
+                                                 FROM 750PX TO ---
+***************************************************************************************************************/
+@media screen and (min-width: 760px) {
+    /* STYLING HERO SECTION */
+    .heroArea
+    {
+        background-image: url(./images/image-hero-desktop.jpg);
+    }
+    .heroArea nav{
+        padding: 40px 10%;
+    }
+    .closeMenu,.hummBurgerMenu
+    {
+        display: none;
+    }
+    .logo
+    {
+        position: absolute;
+    }
+    .heroArea .menu
+    {
+        transform: scale(1);
+        flex-direction: row;
+        justify-content: flex-end;
+        position: relative;
+        margin: 0;
+        background: transparent;
+        border: none;
+    }
+    .heroArea .menu li
+    {
+        line-height: 0;
+        margin: 0;
+        border:none;
+    }
+    .heroArea .menu li a
+    {
+        opacity: 1;
+        color: #fff;
+        margin: 0 0 0 1em;
+    }
+    .heroArea .topLine
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    /* STYLING CONTENT AREA */
+    .content
+    {
+        margin: -7vh 20vw 0 20vw
+    }
+    .mainStats
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "stat1 stat2 stat3"
+                             "progBar progBar progBar";
+    }
+    .statbacked
+    {
+        grid-area: stat1;
+    }
+    .statbacker
+    {
+        grid-area: stat2;
+    }
+    .statLeft
+    {
+        grid-area: stat3;
+    }
+    .statsProgress
+    {
+        grid-area: progBar;
+    }
+    .mainStats .statWithBefore::before
+    {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 50%;
+        bottom: 30%;
+        left: 100%;
+        background: var(--DGreyNeutralColor);
+        opacity: .4;
+    }
+    /* STYLING ABOUT AREA */
+    .aboutSection
+    {
+        padding: 1.5rem 2rem;
+    }
+    /* STYLING SUCCESS MODAL */
+    .successModal
+    {
+        width: 50%;
+        left: 25%;
+        display: flex;
+    }
+    /* STYLING SELECT MODAL */
+    .selectModalStart
+    {
+        margin: 0 20vw;
+    }
+}
+
+
+/*************************************************HIDDING & OUT OF STOCK CLASS************************************************/
+.hiddeMenu
+{
+   display: none;
+}
+
+.outOfStock
+{
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: .3;
+}

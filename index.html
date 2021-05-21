@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Crowdfunding product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="container">
+    <main>
+      <div class="heroArea">
+        <nav>
+          <div class="topLine">
+            <div class="logo">
+              <h3><a href="#">crowdfund</a></h3>
+            </div>
+  
+            <div class="mobMenu">
+              <div class="closeMenu hiddeMenu" id="closeMenu"><img src="./images/icon-close-menu.svg" alt="Close"></div>
+              <div class="hummBurgerMenu" id="humburgerMenu"><img src="./images/icon-hamburger.svg" alt="Menu"></div>
+            </div>
+          </div>
+          <ul class="menu" id="menu">
+            <li><a href="#aboutSectionModal">About</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Get Started</a></li>
+          </ul>
+        </nav>
+      </div>
+    
+      <div class="content">
+        <div class="mastercraftBambooMonitorRiser">
+           <img src="./images/logo-mastercraft.svg" alt="Mastercraft Logo">
+          <h1>Mastercraft Bamboo <br> Monitor Riser</h1>
+          <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+          <div class="masterBottomLine">
+            <div class="backThisProject" id="backThisProjectBtn">Back this project</div>
+            <div class="bookMark"><img width="70%" src="./images/icon-bookmark.svg" alt="BookMark"></div>
+          </div>
+        </div>
+      
+        <div class="mainStats">
+          <div class="statWithBefore statbacked">
+            <span class="bigBold" id="backedId" data-backed="89914"></span>
+            <span data-money-needed="100000" id="totalAmountNeeded"></span>
+          </div>
+      
+          <div class="statWithBefore statbacker">
+            <span class="bigBold" id="numberOfBackersId" data-backers="5007"></span>
+            <span>total backers</span>
+          </div>
+      
+          <div>
+            <span class="bigBold statLeft">56</span>
+            <span>days left</span>
+          </div>
+          <div class="statsProgress">
+            <div class="progressValue" id="progressValueId" data-progress="50"></div>
+          </div>
+        </div>
+      
+  
+        <!--******************************************************************************************************************************************
+          This serves as the background of every pop up
+          this is show immediately when the web loads
+        
+        ***********************************************************Company About Section**************************************************************-->
+        <div class="aboutSection" id="aboutSectionModal">
+          <h1 class="aboutThis">About this project</h1>
+      
+          <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
+            to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
+            your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+          
+            <br><br> Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
+            to allow notepads, pens, and USB sticks to be stored under the stand.</p> 
+      
+          <!--Boom Stand inside card-->
+          <div class="pledgeCard" id="abtboomStand">
+            <h1>Bamboo Stand</h1>
+            <div class="pledgeAmount">Pledge $25 or more</div>
+            <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+              you’ll be added to a special Backer member list.</p>
+            <div class="pledgeCardBottomLine">
+              <div class="itemsLeft" id="boomStandData" data-abs-items-left="4"></div>
+              <div class="actionBtn" id="abtboomStandAction"><a href="#modalboomStand">Select Reward</a></div>
+            </div>
+          </div>
+      
+          <!--Black Edition inside card-->
+          <div class="pledgeCard" id="blackEdition">
+            <h1>Black Edition Stand</h1>
+            <div class="pledgeAmount">Pledge $75 or more</div>
+            <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+              member list. Shipping is included.</p>
+              <div class="pledgeCardBottomLine">
+                <div class="itemsLeft" id="blackEditionStandData" data-bes-items-left="64">64 <span>left</span> </div>
+                <div class="actionBtn" id="blackEditionAction"><a href="#blackEditionStand">Select Reward</a></div>
+              </div>
+          </div>
+      
+          <!--Mahogany Special Edition inside card-->
+          <div class="pledgeCard" id="mahoganySpecialEdition">
+            <h1>Mahogany Special Edition</h1>
+            <div class="pledgeAmount">Pledge $200 or more</div>
+            <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+              to our Backer member list. Shipping is included.</p>
+            <div class="pledgeCardBottomLine">
+              <div class="itemsLeft" id="mahoganySpecialEditionData" data-mse-items-left="7000"></div>
+              <div class="actionBtn" id="mahoganySpecialEditionAction"><a href="#pledgemahoganySpecialEdition">Select Reward</a></div>
+            </div>
+          </div>
+      
+        </div>
+        <!--******************************************************End Of About Section***************************************************************-->
+        <footer>
+          <div>&copy; All rights reserved 2021</div>
+          <div>Developer: Buhle Allen</div>
+          <div><a href="tel: +27 74 885 4683">074 885 4683</a></div>
+          <div><a href="mail:buhleallen@gmail.com">buhleallen@gmail.com</a></div>
+          <div>Designer : FrontEnd Mentor</div>
+        </footer>
+      </div>
+      <!--For Overlay Color when the is a popup-->
+      <span class="withPopUp hiddeMenu" id="theIsAPopUp"></span>
+    </main>
+    
+    
+    
+      <!--******************************************  MINIMUM CSS REQUIREMENTS FOR SECTION BELOW *****************************************************
+                                                    Below is a pop up section
+                                                    It needs and exit icon
+                                                    Background page should have a dark overlay when this popup pops
+                                                    This popup needs a feeling that it is near the user compared to the background page
+     **********************************************************************************************************************************************
+     ***************************************************************** Selection modal start ******************************************************-->
+    
+      <div class="selectModalStart" id="selectModalStartId">
+        <div class="selectModalContent">
+          <div class="selectModalFirstline">
+            <h1>Back this project</h1>
+            <div id="closeModals"><img src="./images/icon-close-modal.svg" alt="Close"></div>
+          </div>
+            <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+          
+              <div class="mods" id="mods">
+                <div class="pledge" id="pledgeWithNoReward">
+                  <div>
+                    <div class="pledgeFirstLine">
+                      <div class="checkCircle"><div class="checked"></div></div>
+                      <h1>Pledge with no reward</h1>
+                    </div>
+                    <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
+                      you will be signed up to receive product updates via email.</p>
+                  </div>
+                   <!-- Selected pledge start -->
+                   <div class="DropDown">
+                    <div>
+                        <div class="submit" id="pledgeWithNoRewardSubmit"><a href="#successModalAlertId">Continue</a></div>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="pledge" id="modalboomStand">
+                  <div>
+                    <div class="pledgeFirstLine">
+                      <div class="checkCircle"><div class="checked"></div></div>
+                      <div>
+                        <h1>Bamboo Stand</h1>
+                        <div class="pledgeAmount">Pledge $25 or more</div></div>
+                    </div>
+                    <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+                      you’ll be added to a special Backer member list.</p>
+                      <div class="itemsLeft" id="boomStandDataOpen" data-abs-items-left="4"></div>
+                  
+                  <!--*****************SHOWS WHEN #boomStand***************-->
+                                   <!-- Selected pledge start -->
+                                   <div class="DropDown">
+                                    <input type="pledgeInput" id="pledgeInput25" placeholder="Enter your pledge">
+                                    <div>
+                                      <div id="pledgeinput25">$ <span>25</span></div>
+                                      <div class="submit" id="modalboomStandSubmit"><a href="#successModalAlertId">Continue</a></div>
+                                    </div>
+                                </div>
+                  <!--***************** Selected pledge end ***************-->
+                </div>
+                </div>
+        
+                <div class="pledge" id="blackEditionStand">
+                  <div>
+                    <div class="pledgeFirstLine">
+                      <div class="checkCircle"><div class="checked"></div></div>
+                      <div>
+                        <h1>Black Edition Stand</h1>
+                        <div class="pledgeAmount">Pledge $75 or more</div>
+                      </div>
+                    </div>
+                    
+                    <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+                      member list. Shipping is included.</p>
+                      <div class="itemsLeft" id="blackEditionStandDataOpen" data-bes-items-left="64">64 <span>left</span> </div>
+                  
+                  <!--**************SHOWS WHEN #blackEditionStand***************-->
+                                   <!-- Selected pledge start -->
+                        <div class="DropDown">
+                            <input type="pledgeInput" id="pledgeInput75" placeholder="Enter your pledge">
+                            <div>
+                              <div id="pledgeinput75" >$ <span>75</span></div>
+                              <div class="submit" id="blackEditionStandSubmit"><a href="#successModalAlertId">Continue</a></div>
+                            </div>
+                        </div>
+                  <!--***************** Selected pledge end ***************-->
+                </div>
+                </div>
+        
+                <div class="pledge" id="pledgemahoganySpecialEdition">
+                  <div>
+                    <div class="pledgeFirstLine">
+                      <div class="checkCircle"><div class="checked"></div></div>
+                      <div>
+                        <h1>Mahogany Special Edition</h1>
+                        <div class="pledgeAmount">Pledge $200 or more</div>
+                      </div>
+                    </div>
+                    <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+                      to our Backer member list. Shipping is included.</p>
+                      <div class="itemsLeft" id="mahoganySpecialEditionDataOpen" data-mse-items-left="7000"></div>
+                  
+                  <!--**************SHOWS WHEN #mahoganySpecialEdition***************-->
+                                   <!-- Selected pledge start -->
+                                   <div class="DropDown">
+                                    <input type="pledgeInput" id="pledgeInput200" placeholder="Enter your pledge">
+                                    <div>
+                                      <div id="pledgeinput200">$ <span>200</span></div>
+                                      <div class="submit" id="pledgemahoganySpecialEditionSubmit"><a href="#successModalAlertId">Continue</a></div>
+                                  </div>
+                              </div>
+                  <!--***************** Selected pledge end ***************-->
+                </div>
+              </div>
+              </div>
+        </div>
+      </div>
+      <!--********************************************************Selection modal end ********************************************************-->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+       <!--******************************************  MINIMUM CSS REQUIREMENTS FOR SECTION BELOW *****************************************************
+                                                    Below is a pop up section after ther user have pledged
+                                                    It needs and exit icon
+                                                    Background page should have a dark overlay when this popup pops
+                                                    This popup needs a feeling that it is near the user compared to the background page
+     **********************************************************************************************************************************************
+     ****************************************************** Success modal start ********************************************************-->
+     <div class="successModal" id="successModalAlertId">
+       <div class="successModalContent">
+         <div class="checkMarkBg">
+           <div class="checkMark"></div>
+         </div>
+          <h3>Thanks for your support!</h3>
+          <p>
+            Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+            an email once our campaign is completed.
+          </p>
+          <div class="gotIt" id="successGotItId">Got it!</div>
+       </div>
+     </div>
+    
+      <!--******************************************************** Success modal end *********************************************************-->
+  </div>
+  <script src="./dom.js"></script>
+</body>
+</html>
