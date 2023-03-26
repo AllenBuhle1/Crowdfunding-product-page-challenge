@@ -33,11 +33,11 @@ Users should be able to:
 - CSS custom properties
 - CSS Flexbox
 - Mobile-first workflow
-- React
+- DOM Javascript
 
 ### What I learned
 
-This project made me more comfortable with React and was a nice and entertaining project to work with.
+This project made me more comfortable with DOM Javascript and was a nice and entertaining project to work with.
 
 ### Continued development
 
