@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/AllenBuhle1/Crowdfunding-product-page-challenge.git)
-- Live Site URL: [On Netlify](https://wonderful-brown-7d36f1.netlify.app/)
+- Live Site URL: [Live On Netlify](https://buhleallen-crowdfund.netlify.app/)
 
 ## My process
 
@@ -33,11 +33,11 @@ Users should be able to:
 - CSS custom properties
 - CSS Flexbox
 - Mobile-first workflow
-- DOM Javascript
+- React
 
 ### What I learned
 
-I learned nothing new but it was a nice and entertaining project to work with.
+This project made me more comfortable with React and was a nice and entertaining project to work with.
 
 ### Continued development
 
@@ -45,10 +45,9 @@ As from this project onwards I need to polish my JavaScript and learn some javas
 
 ## Author
 
-- Website - [Buhle Allen](https://www.allenbuhle.com)
 - Frontend Mentor - [@AllenBuhle1](https://www.frontendmentor.io/profile/AllenBuhle1)
-- Instagram - [@allenbuhle](https://www.twitter.com/allenbuhle)
+- Instagram - [@allenbuhle](https://www.instagram.com/allenbuhle)
 
 ## Acknowledgments
 
-I worked alone in this project, no external help.
+I did this project alone, no external help.
