@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AllenBuhle1/Crowdfunding-product-page-challenge.git)
+- Solution URL: [Solution URL(GitHub)](https://github.com/AllenBuhle1/Crowdfunding-product-page-challenge.git)
 - Live Site URL: [Live On Netlify](https://buhleallen-crowdfund.netlify.app/)
 
 ## My process
@@ -38,10 +38,6 @@ Users should be able to:
 ### What I learned
 
 This project made me more comfortable with DOM Javascript and was a nice and entertaining project to work with.
-
-### Continued development
-
-As from this project onwards I need to polish my JavaScript and learn some javascript frameworks.
 
 ## Author
 
