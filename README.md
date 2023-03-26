@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Screenshot
 
-![ScreenShot](./screenShot.jpg?raw=true "ScreenShot Of The Site")
+![ScreenShot](./screenShot.png?raw=true "ScreenShot Of The Site")
 
 ### Links
 
