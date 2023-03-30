@@ -161,6 +161,7 @@ body
 .mastercraftBambooMonitorRiser .masterBottomLine .backThisProject:hover
 {
     background-color: var(--darkPrimaryColor);
+    cursor: pointer;
 }
 .mastercraftBambooMonitorRiser .masterBottomLine .bookMark
 {
