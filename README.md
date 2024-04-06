@@ -1,10 +1,11 @@
 # Frontend Mentor - Crowdfunding product page solution
 
 This is a solution to the [Crowdfunding product page challenge on Frontend Mentor](/screenShot.png). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
 ## Table of contents
-
 ## Overview
+### Screenshot
+
+![ScreenShot](./screenShot.png?raw=true "ScreenShot Of The Site")
 
 ### The challenge
 
@@ -15,10 +16,6 @@ Users should be able to:
 - Make a selection of which pledge to make
 - See an updated progress bar and total money raised based on their pledge total after confirming a pledge
 - See the number of total backers increment by one after confirming a pledge
-
-### Screenshot
-
-![ScreenShot](./screenShot.png?raw=true "ScreenShot Of The Site")
 
 ### Links
 
